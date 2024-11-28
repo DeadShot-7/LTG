@@ -47,7 +47,7 @@ img {
     top: 450px; /* Default top position */
     z-index: 1;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 8px; /* Consistent spacing */
     width: 90%; /* Dynamically adjusts to screen width */
     max-width: 800px; /* Max width for larger screens */
