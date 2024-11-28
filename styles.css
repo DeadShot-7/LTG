@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001524; /*f0f4f3;*/
+}
+
+img {
+    width: 50%;
+}
+
+.Logo {
+    position: absolute; /* Allows precise placement on the page */
+    top: 20px;
+}
+
+.thank-you-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.triangle_Left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 52.5%;
+    background-color: #000015 ;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.triangle_Right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    height: 52.5%;
+    background-color: #000015;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.content {
+    position: absolute;
+    top: 500px; /* Default top position */
+    z-index: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px; /* Consistent spacing */
+    width: 90%; /* Dynamically adjusts to screen width */
+    max-width: 800px; /* Max width for larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Horizontally center the box */
+    box-sizing: border-box;
+}
+
+.content video {
+    width: 100%; /* Video takes up the full width of the .content box */
+    max-width: calc(800px - 20px); /* Matches max-width of the .content minus padding (20px on each side) */
+    border-radius: 10px; /* Optional: Aligns the video's corners with the box's radius */
+    display: block; /* Ensures the video doesn't have inline spacing issues */
+}
+
+
+.checkmark {
+    position: absolute;
+    top: 100px;
+    font-size: 100px;
+    color: green;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px black;
+}
+
+h1 {
+    position: absolute;
+    top: 190px;
+    color: #f9f5f2;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+}
+
+p {
+    z-index: 1;
+    font-size: 22px;
+    color: #f9f5f2;
+    margin-bottom: 20px;
+    padding-inline: 20px;
+}
+
+.parra {
+    position: absolute;
+    top: 300px;
+    margin-bottom: 10px;
+}
+
+.content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px black;
+    transition: 0.3s ease-in-out;
+}
