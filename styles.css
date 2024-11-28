@@ -57,7 +57,7 @@ img {
     box-sizing: border-box;
 }
 
-.iframe {
+iframe {
     width: 100%; /* Video takes up the full width of the .content box */
     max-width: calc(800px - 20px); /* Matches max-width of the .content minus padding (20px on each side) */
     border-radius: 4px; /* Optional: Aligns the video's corners with the box's radius */
