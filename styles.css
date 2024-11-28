@@ -54,7 +54,7 @@ img {
     max-height: 450px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 0 auto; /* Horizontally center the box */
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 
 iframe {
@@ -64,6 +64,7 @@ iframe {
     display: block; /* Ensures the video doesn't have inline spacing issues */
     height: 100%;
 }
+
 
 .checkmark {
     position: absolute;
