@@ -1,105 +1,252 @@
+/* General Styles */
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #001524; /*f0f4f3;*/
+    padding: 0;
+    background-color: #111;
+    color: #f9f9f9;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-img {
-    width: 50%;
+h1, h2, h3 {
+    color: #fff;
 }
 
-.Logo {
-    position: absolute; /* Allows precise placement on the page */
-    top: 20px;
+/* Navigation */
+header {
+    background-color: #000;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.5s ease;
+    position: relative; /* Ensure positioning for absolute elements inside */
 }
 
-.thank-you-page {
+/* Logo styling */
+.logo img {
+    height: 40px; /* Adjust size of the logo */
+    width: auto;
+}
+
+/* Logo stays on the left */
+nav .logo {
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+/* Center the navigation bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Navigation links style */
+nav ul li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* Button aligned to the right */
+nav .cta {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    right: 5%;
+}
+
+/* Hero Section */
+.hero {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-between;
+    background: linear-gradient(to right, #000, #222);
+    color: white;
+    padding: 80px 10%;
     position: relative;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #28a745, #b3ffab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+.hero-image {
+    max-width: 40%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Section Transitions */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.alternate-section {
+    background-color: #fff;
+    color: #111;
+}
+
+.alternate-section h2 {
+    color: #28a745;
+}
+
+/* Features Section */
+.features {
+    background-color: #111;
+    color: white;
+    padding: 80px 10%;
+}
+
+.features h2 {
+    color: #28a745;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* Case Studies */
+.case-studies {
+    background-color: #fff;
+    color: #111;
+    padding: 80px 10%;
     text-align: center;
 }
 
-.triangle_Left {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 52.5%;
-    background-color: #000015 ;
-    clip-path: polygon(0 0, 100% 0, 0 100%);
+.case-studies h1 {
+    color: #000
 }
 
-.triangle_Right {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 30%;
-    height: 52.5%;
-    background-color: #000015;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+.case-study {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.content {
-    position: absolute;
-    top: 450px; /* Default top position */
-    z-index: 1;
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 8px; /* Consistent spacing */
-    width: 90%; /* Dynamically adjusts to screen width */
-    max-width: 800px; /* Max width for larger screens */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Horizontally center the box */
-    box-sizing: border-box;
-    aspect-ratio: 16/9; 
+.case-study h3 {
+    color: #28a745;
+    margin-bottom: 15px;
 }
 
-iframe {
-    width: 100%; /* Video takes up the full width of the .content box */
-    height: 100%;
-    max-width: calc(800px - 20px); /* Matches max-width of the .content minus padding (20px on each side) */
-    max-height: calc(450px - 20px);
-    border-radius: 4px; /* Optional: Aligns the video's corners with the box's radius */
-    display: block; /* Ensures the video doesn't have inline spacing issues */
+/* Pricing */
+.pricing {
+    background-color: #111;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
 }
 
-.checkmark {
-    position: absolute;
-    top: 120px;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px black;
-    width: 100px;
-    height: auto;
+.pricing h2 {
+    color: #28a745;
 }
 
-h1 {
-    font-family: "Cormorant Infant", serif;
-    position: absolute;
-    top: 150px;
-    color: #f9f5f2;
-    font-size: 50px;
-    text-shadow: 2px 2px black;
+.pricing-tiers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
 }
 
-p {
-    font-family: "Cormorant Infant", serif;
-    z-index: 1;
-    font-size: 20px;
-    color: #f9f5f2;
-    margin-bottom: 20px;
-    padding-inline: 20px;
+.tier {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    max-width: 350px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-.parra {
-    position: absolute;
-    top: 260px;
-    margin-bottom: 10px;
+.tier:hover {
+    transform: translateY(-5px);
 }
 
-.content:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px black;
-    transition: 0.3s ease-in-out;
+.tier h3 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* CTA Section */
+.cta-section {
+    background-color: #28a745;
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
