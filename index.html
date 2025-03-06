@@ -3,27 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You Page</title>
-    <link rel="icon" type="image/x-icon" scr="LTG_W.png">
+    <title>LTG-Media | WhatsApp Automation</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="triangle_Left"></div>
-    <div class="triangle_Right"></div>
-    <div class="thank-you-page">
-        <div class="Logo"><img src="LTG_W-removebg.png"></div>
-        <div class="checkmark"><img src="Check.png"></div>
-            <h1>Thank you!</h1>
-            <div class="parra">
-            	<p>Looking Forward To Our Call Together</p>
-            	<p>Check Your Email To Confirm Our Call & Watch The Video Below Before Attending The Call</p>
-        	</div>
-        <div class="content", class="hover">
-             <iframe src="https://www.youtube.com/embed/FlEGRnzDzB8" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>   
+    <header>
+        <nav>
+            <div class="logo"><a href="#book-call" class="cta">Book a Call</a></div>
+            <div class="logo"><img src="Logo.jpg" alt="LTG-Media">LTG-Media</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlock Hidden Revenue with WhatsApp Automation</h1>
+            <p>Engage customers instantly, increase retention, and boost lifetime value using AI-powered WhatsApp automation.</p>
+            <a href="#book-call" class="btn-primary">Book a Free Consultation</a>
         </div>
-    </div>
+        <div class="hero-image">
+            <img src="phone_bgr.jpg" alt="Phone background">
+        </div>
+    </section>
+    
+    <section id="features" class="features">
+        <h2>Why WhatsApp Automation?</h2>
+        <div class="feature-cards">
+            <div class="feature">
+                <h3>Instant Customer Engagement</h3>
+                <p>Respond to inquiries 24/7 with AI-powered chatbots.</p>
+            </div>
+            <div class="feature">
+                <h3>Higher Conversions</h3>
+                <p>Personalized automated messages increase sales and retention.</p>
+            </div>
+            <div class="feature">
+                <h3>Seamless Integration</h3>
+                <p>Works with CRM, Shopify, and more using Wati.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="case-studies" class="case-studies">
+        <h1>Real Businesses, Real Results</h1>
+        <h4>See how LTG-Media has helped businesses grow with WhatsApp automation.</h4>
+        <div class="case-study">
+            <h3>Case Study: E-Commerce Brand</h3>
+            <p>Boosted revenue by 40% through automated customer re-engagement.</p>
+        </div>
+        <div class="case-study">
+            <h3>Case Study: Local Service Provider</h3>
+            <p>Reduced response time from hours to seconds, increasing customer satisfaction.</p>
+        </div>
+    </section>
+    
+    <section id="pricing" class="pricing">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-tiers">
+            <div class="tier">
+                <h3>Starter</h3>
+                <p>Basic automation for small businesses.</p>
+                <span>$499/month</span>
+            </div>
+            <div class="tier">
+                <h3>Growth</h3>
+                <p>Advanced automation and AI chatbots.</p>
+                <span>$999/month</span>
+            </div>
+            <div class="tier">
+                <h3>Enterprise</h3>
+                <p>Custom integrations and full-scale automation.</p>
+                <span>Contact for pricing</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="book-call" class="cta-section">
+        <h2>Don't Leave Money on the Table</h2>
+        <p>Schedule a free strategy call and start automating your customer engagement today.</p>
+        <a href="#contact" class="btn-primary">Book a Call Now</a>
+    </section>
+    
+    <footer>
+        <p>© 2025 LTG-Media. All rights reserved.</p>
+    </footer>
 </body>
 </html>
