@@ -40,7 +40,7 @@ nav .logo {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 5%;
     flex-grow: 1;
     justify-content: center;
     margin: 0;
